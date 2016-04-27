@@ -1,0 +1,37 @@
+/*  ----------------------------------------------------------------------------
+    Module 3
+*/
+.td_module_3 {
+  padding-bottom: 30px;
+
+  .td-module-comments {
+    top: -4px;
+  }
+
+  .td-module-image .td-module-thumb {
+    margin-bottom: 12px;
+  }
+
+  .entry-review-stars {
+    height: 15px;
+    position: relative;
+    top: -1px;
+    margin-bottom: 2px;
+
+    i {
+      line-height: 10px;
+    }
+  }
+
+  // fix the image space on load
+  .entry-thumb {
+    /* responsive desktop */
+    @media (min-width: 1024px) {
+      min-height: 194px;
+    }
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      min-height: 141px;
+    }
+  }
+}

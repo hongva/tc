@@ -1,0 +1,78 @@
+/*  ----------------------------------------------------------------------------
+    Module mx2
+*/
+.td_module_mx2 {
+
+  .clearfix();
+
+
+  .entry-title {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 19px;
+  }
+
+  .entry-title {
+    margin: 0px 0px 5px 0px;
+  }
+
+  .entry-thumb {
+    width: 80px;
+    height: auto;
+  }
+
+  .td-module-thumb {
+    position: absolute;
+    margin: 0px 0px 0px 21px;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      margin: 0px 0px 0px 17px;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      margin: 0px 0px 0px 10px;
+    }
+  }
+
+  .meta-info {
+    margin-bottom: 0px;
+
+    div {
+      margin-bottom: 0px;
+    }
+  }
+
+  .entry-review-stars {
+    height: 15px;
+    position: relative;
+    top: -1px;
+    margin-bottom: 2px;
+
+    i {
+      line-height: 10px;
+    }
+  }
+
+
+  .item-details {
+    margin: 0px 20px 20px 120px;
+    display: block;
+    min-height: 60px;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      margin: 0px 15px 17px 110px;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      margin: 0px 10px 17px 104px;
+    }
+  }
+
+  .entry-date {
+    position: relative;
+  }
+}

@@ -1,0 +1,65 @@
+/*  ----------------------------------------------------------------------------
+    Module 2
+*/
+.td_module_2 {
+  padding-bottom: 22px;
+
+  .entry-title {
+    margin: 0px 0px 13px 0px;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      margin-bottom: 8px;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      margin-bottom: 8px;
+    }
+  }
+
+  .td-module-image .td-module-thumb {
+    margin-bottom: 12px;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      margin-bottom: 12px;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      margin-bottom: 12px;
+    }
+  }
+
+  // fix the image space on load
+  .entry-thumb {
+    /* responsive desktop */
+    @media (min-width: 1024px) {
+      min-height: 160px;
+    }
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      min-height: 116px;
+    }
+  }
+
+  .meta-info {
+    margin-bottom: 6px;
+  }
+
+  .td-module-comments {
+    top: -4px;
+  }
+
+  .entry-review-stars {
+    height: 15px;
+    position: relative;
+    top: -1px;
+    margin-bottom: 2px;
+
+    i {
+      line-height: 10px;
+    }
+  }
+}

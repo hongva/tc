@@ -1,0 +1,69 @@
+/*  ----------------------------------------------------------------------------
+    Module 13
+*/
+.td_module_13 {
+  padding-left: 20px;
+  padding-right: 19px;
+
+  /* responsive portrait tablet */
+  @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  /* responsive portrait phone */
+  @media (max-width: @responsive_p_phone_max) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .entry-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0px 0px 7px 0px;
+    font-weight: 600;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      margin-bottom: 4px;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      margin-bottom: 4px;
+    }
+  }
+
+  .item-details {
+    border-bottom: 1px dashed @module-dashed-line;
+    padding-bottom: 29px;
+    margin-bottom: 20px;
+  }
+
+  .meta-info {
+    margin-bottom: 16px;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      margin-bottom: 13px;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      margin-bottom: 13px;
+    }
+  }
+
+  .td-module-thumb {
+    margin-bottom: 20px;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      margin-bottom: 17px;
+    }
+  }
+
+  .entry-review-stars {
+    top: -1px;
+  }
+}

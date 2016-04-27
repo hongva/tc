@@ -1,0 +1,74 @@
+/*  ----------------------------------------------------------------------------
+    Module 10
+*/
+.td_module_10 {
+  padding-left: 20px;
+  padding-right: 19px;
+
+  /* responsive portrait tablet */
+  @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  /* responsive portrait phone */
+  @media (max-width: @responsive_p_phone_max) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .td-module-thumb {
+    position: relative;
+    float: left;
+    margin-bottom: 20px;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      margin-bottom: 17px;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      float: none;
+      margin-bottom: 12px;
+    }
+  }
+
+  .entry-title {
+    margin-bottom: 11px;
+  }
+
+  .item-details {
+    position: relative;
+    min-height: 135px;
+    margin-left: 200px;
+    margin-bottom: 40px;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      margin-left: 196px;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      margin-left: 0px;
+    }
+  }
+
+  .entry-review-stars {
+    top: -4px;
+    height: 19px;
+  }
+
+  // fix the image space on load
+  .entry-thumb {
+    /* responsive desktop */
+    @media (min-width: 1024px) {
+      min-height: 135px;
+    }
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      min-height: 135px;
+    }
+  }
+}

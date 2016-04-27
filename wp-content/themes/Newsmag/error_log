@@ -1,0 +1,4 @@
+[30-Mar-2016 18:07:49 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home4/tnmasiac/public_html/wp-content/themes/Newsmag/index.php on line 6
+[30-Mar-2016 18:07:49 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home4/tnmasiac/public_html/wp-content/themes/Newsmag/index.php on line 6
+[30-Mar-2016 18:31:06 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home4/tnmasiac/public_html/wp-content/themes/Newsmag/index.php on line 6
+[30-Mar-2016 18:31:07 America/Denver] PHP Fatal error:  Call to undefined function get_header() in /home4/tnmasiac/public_html/wp-content/themes/Newsmag/index.php on line 6

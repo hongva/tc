@@ -1,0 +1,291 @@
+// general fonts setup
+.td_module_1,
+.td_module_2,
+.td_module_3,
+.td_module_4,
+.td_module_5,
+.td_module_10,
+.td_module_11 {
+  .entry-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0px 0px 12px 0px;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      font-size: 15px;
+      line-height: 21px;
+      margin-bottom: 8px;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+  }
+
+  .td-module-thumb {
+    margin-bottom: 12px;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      margin-bottom: 8px;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      margin-bottom: 9px;
+    }
+  }
+
+  .td-post-author-name {
+    margin-bottom: 6px;
+  }
+
+  .td-post-date {
+    margin-bottom: 6px;
+  }
+
+  .meta-info {
+    margin-bottom: 5px;
+    line-height: 11px;
+  }
+}
+
+.td_module_6,
+.td_module_7,
+.td_module_8 {
+  .entry-title {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19px;
+    margin: 0px 0px 12px 0px;
+  }
+
+  .td-module-thumb {
+    margin-bottom: 12px;
+  }
+
+  .td-post-author-name {
+    margin-bottom: 6px;
+  }
+
+  .td-post-date {
+    margin-bottom: 6px;
+  }
+
+  .meta-info {
+    margin-bottom: 5px;
+    line-height: 11px;
+  }
+}
+
+.td-excerpt,
+.td-module-excerpt {
+  margin-bottom: 15px;
+  color: #444444;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+// stars
+.entry-review-stars {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  left: 1px;
+}
+
+/* the title */
+.td-module-title {
+  a {
+    color: @module_title;
+    font-family: @font1;
+  }
+}
+
+.td-module-comments {
+  position: relative;
+  top: -3px;
+  background-color: @module_comments_background_color;
+  float: right;
+  font-family: @font1;
+  //font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  -webkit-border-radius: 2px;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius: 2px;
+  -moz-border-radius-bottomright: 0;
+  border-radius: 2px;
+  border-bottom-right-radius: 0;
+
+  a {
+    color: @module_comments_text_color;
+    padding: 2px 6px 3px 6px;
+    display: inline-block;
+    min-width: 25px;
+    height: 20px;
+    line-height: 16px;
+
+    &:after {
+      position:absolute;
+      bottom: -5px;
+      right: 0;
+      content:'';
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 5px 5px 0 0;
+      border-color: @module_comments_background_triunghi_color transparent transparent transparent;
+    }
+
+    &:hover {
+      color: @module_comments_text_color;
+    }
+  }
+}
+
+
+//read more
+.td-read-more {
+  height: 30px;
+  display: inline-block;
+  line-height: 29px;
+
+  a {
+    background-color: #444444;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 8px 15px;
+
+    &:hover {
+      background-color: @td_theme_color;
+    }
+  }
+}
+
+
+
+
+
+/*  ----------------------------------------------------------------------------
+    thumbnails
+*/
+.td_module_wrap {
+  position: relative;
+}
+
+.td-video-play-ico {
+  position: absolute;
+  left:50%;
+  top:50%;
+  z-index: 2;
+
+  img {
+    position: relative;
+    left:-50%;
+    top:-20px !important;
+  }
+
+  &.td-video-small img {
+    top:-10px !important;
+  }
+}
+
+
+/*  ----------------------------------------------------------------------------
+    admin edit
+*/
+.td-admin-edit {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff !important;
+  padding: 3px 10px;
+  font-size: 13px;
+  .transition(background-color @td_transition_time);
+
+  &:hover {
+    background-color: #000;
+  }
+}
+
+.td-module-thumb:hover .td-admin-edit {
+  display: block;
+}
+
+
+/*  ----------------------------------------------------------------------------
+    thumbnail
+*/
+
+.td-module-thumb {
+  position: relative;
+  margin-bottom: 12px;
+
+  //edit
+  &:hover .td-admin-edit {
+    display: block;
+    color: #ffffff;
+  }
+
+  .entry-thumb {
+    display: block; //this fixes the white line issue that we had
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      width: 100%;
+    }
+  }
+}
+
+/*  ----------------------------------------------------------------------------
+    hover title
+*/
+.td_module_wrap,
+.td_mod_mega_menu {
+  .entry-title a {
+    -o-transition: color 0.20s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -moz-transition: color 0.20s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -khtml-transition: color 0.20s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -webkit-transition: color 0.20s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -ms-transition: color 0.20s cubic-bezier(0, 0, 0.58, 1) 0s;
+    transition: color 0.20s cubic-bezier(0, 0, 0.58, 1) 0s;
+  }
+
+  &:hover .entry-title a {
+    color: @td_theme_color;
+  }
+}
+
+// disable hover for individual modules
+.td_module_mx1 {
+  &:hover .entry-title a {
+    color: #ffffff;
+  }
+}
+
+// category on module
+.td-module-image {
+  position: relative;
+
+  .td-post-category {
+    position: absolute;
+    line-height: 7px;
+    padding: 5px;
+    border-radius: 0px 3px 0px 0px;
+    bottom: 0;
+    display: block;
+  }
+}

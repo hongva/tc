@@ -1,0 +1,111 @@
+/*  ----------------------------------------------------------------------------
+    Module 14
+*/
+.td_module_14 {
+  z-index: 1;
+
+  .meta-info {
+    position: absolute;
+    background-color:@module-mx3-title-bg-color;
+    border-bottom: 1px dashed @module-dashed-line;
+    margin: 0px 20px 0px 20px;
+    padding: 13px 20px 12px 20px;
+    bottom: -49px;
+    width: 639px;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      width: 463px;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      width: 100%;
+      margin: 0px;
+      bottom: auto;
+      padding: 8px 10px 10px 10px;
+      position: relative;
+    }
+  }
+
+  .entry-title {
+    position: relative;
+    font-family: @font1;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 32px;
+    margin: 0px 0px 9px 0px;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 10px;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .td-module-thumb {
+    width: 681px;
+    max-height: 350px;
+    position: relative;
+    left: -1px;
+    margin-bottom: 49px;
+    overflow: hidden;
+
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      max-height: 260px;
+      width: 505px;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      width: 100%;
+      margin-bottom: 0px;
+      max-height: none;
+    }
+
+    .entry-thumb {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+      /* responsive portrait phone */
+      @media (max-width: @responsive_p_phone_max) {
+        width: 100%;
+      }
+    }
+  }
+
+  .meta-info-container {
+    position: relative;
+  }
+
+  .td-excerpt {
+    padding: 12px 20px 37px 20px;
+    margin: 0px;
+    max-width: 681px;
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      padding: 6px 10px 50px 10px;
+    }
+  }
+
+  // fix the image space on load
+  .entry-thumb {
+    /* responsive desktop */
+    @media (min-width: 1024px) {
+      min-height: 100px;
+    }
+  }
+}
